@@ -1,0 +1,12 @@
+{% if product_list %}
+    {% for p in product_list %}
+        {{ p.name }}
+        <ul>
+        {% for e in p.amount_set.all %}
+            <li><a href="{%url 'polls:food' e.id %}">{{ e.food }} , {{ e.weight }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% else %}
+    <p>Tuotteita ei ole.</p>
+{% endif %}

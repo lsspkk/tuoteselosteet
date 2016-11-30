@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block title %}TuoteSelosteet{% endblock %}</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'selosteet/style.css' %}" />
+    </head>
+
+    <body>
+      <div id="wrap">
+      <div id="menu">
+          <ul>
+          {% if user.is_authenticated %}
+              <li><a href="/selosteet/admin/logout/?next=/selosteet/">Poistu</a></li>
+          {% endif %}
+
+              <li><a href="/selosteet/">Tuotteet</a></li>
+              <li><a href="/selosteet/admin/">Hallinta</a></li>
+
+          </ul>
+      </div>
+
+
+
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+
+      </div>
+
+    </body>
+</html>

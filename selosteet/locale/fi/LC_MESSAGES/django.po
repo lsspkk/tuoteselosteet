@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-24 13:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: selosteet/admin.py:26
+msgid "company|description"
+msgstr "Yrityksen osoite tms."
+
+#: selosteet/models.py:17
+msgid "user"
+msgstr "K&auml;tt&auml;j&auml;"
+
+#: selosteet/models.py:18
+msgid "Company|name"
+msgstr "Nimi"
+
+#: selosteet/models.py:19
+msgid "description"
+msgstr "Kuvaus ja lisätiedot"
+
+#: selosteet/models.py:25 selosteet/models.py:61
+msgid "company"
+msgstr "Yritys"
+
+#: selosteet/models.py:26
+msgid "companies"
+msgstr "Yritykset"
+
+#: selosteet/models.py:29
+msgid "Food|name"
+msgstr "Nimi"
+
+#: selosteet/models.py:30
+msgid "Food|nameSV"
+msgstr "Nimi (ruotsi)"
+
+#: selosteet/models.py:31
+msgid "food|description"
+msgstr "lähderaaka-aineet"
+
+#: selosteet/models.py:32
+msgid "food|descriptionSV"
+msgstr "lähderaaka-aineet (ruotsi)"
+
+#: selosteet/models.py:33
+msgid "link"
+msgstr "Linkki nettiin ravintoarvoihin"
+
+#: selosteet/models.py:34
+msgid "extra"
+msgstr "Lisätieto: valmistaja tms."
+
+#: selosteet/models.py:35
+msgid "energy"
+msgstr "Energia"
+
+#: selosteet/models.py:36
+msgid "fat"
+msgstr "Rasva"
+
+#: selosteet/models.py:37
+msgid "saturatedFat"
+msgstr "Tyydyttynyt rasva"
+
+#: selosteet/models.py:38
+msgid "carbohydrate"
+msgstr "Hiilihydraatti"
+
+#: selosteet/models.py:39
+msgid "sugar"
+msgstr "Sokeri"
+
+#: selosteet/models.py:40
+msgid "fiber"
+msgstr "Ravintokuitu"
+
+#: selosteet/models.py:41
+msgid "protein"
+msgstr "Proteiini"
+
+#: selosteet/models.py:42
+msgid "salt"
+msgstr "Suola"
+
+#: selosteet/models.py:54 selosteet/models.py:105
+msgid "food"
+msgstr "Raaka-aine"
+
+#: selosteet/models.py:55
+msgid "foods"
+msgstr "Raaka-aineet"
+
+#: selosteet/models.py:58
+msgid "Product|name"
+msgstr "Tuotteen nimi"
+
+#: selosteet/models.py:59
+msgid "Product|nameSV"
+msgstr "Tuotteen nimi (ruotsi)"
+
+#: selosteet/models.py:62 selosteet/models.py:107
+msgid "weight"
+msgstr "paino"
+
+#: selosteet/models.py:65
+msgid "product"
+msgstr "Tuote"
+
+#: selosteet/models.py:66
+msgid "products"
+msgstr "Tuotteet"
+
+#: selosteet/models.py:113
+msgid "amount"
+msgstr "Määrä;"
+
+#: selosteet/models.py:114
+msgid "amounts"
+msgstr "Määrät"

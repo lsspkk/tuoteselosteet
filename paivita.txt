@@ -1,0 +1,32 @@
+adminin pitää puhua suomea
+
+
+
+raaka-aineluettelon kuvauskentän pitää olla piiiiiitkä
+energia yms. kj-kentässä pitää olla kuvaus
+desimaalimerkki pitää saada pilkku ja piste
+
+
+raaka-aine kanta pitää voida exportata
+
+ja importata kunnolla
+
+
+
+tuotteesta eri versionumerot
+
+  Tuotenimi ei riitä, sama tuotteen nimi, mutta eri
+   reseptin versio, esimerkiksi päivämäärä ja rasvaton
+
+
+
+
+Printtaus
+- mahdollista myös vaakasuunnassa
+- printtausasetukset dokumentin leveys
+- yhden etiketin korkeus
+
+
+Logokuvan printtaus
+URL-kännykkäkameralla kotisivuille, joissa on tuoteselosteet
+

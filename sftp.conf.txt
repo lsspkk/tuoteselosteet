@@ -1,0 +1,8 @@
+{
+    "type": "sftp",
+    "host": "130.255.78.84",
+    "user": "lvp",
+    "password": "",
+    "port": "22",
+    "remotePath": "/home/lvp/djangoilua/tuotteet/"
+}

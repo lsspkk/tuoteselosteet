@@ -1,0 +1,17 @@
+{% extends 'selosteet/base.html' %}
+
+{% block content %}
+
+  {% if product_list %}
+      {% for p in product_list %}
+          <div class="product">
+            <a href="{%url 'selosteet:tuote' p.id %}">{{ p.name }}</a>
+          </div>
+
+      {% endfor %}
+      {% else %}
+        <p>Tuotteita ei ole.</p>
+  {% endif %}
+
+
+{% endblock %}

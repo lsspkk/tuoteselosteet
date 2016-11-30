@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{% block title %}TuoteSelosteet{% endblock %}</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'selosteet/style.css' %}" />
+    </head>
+
+    <body>
+      <div id="wrap" class="fullwidth">
+
+
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+
+      </div>
+
+    </body>
+</html>
