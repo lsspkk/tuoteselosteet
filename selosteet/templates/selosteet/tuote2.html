@@ -10,11 +10,11 @@
           <div class="ingredients">
             {% for e in product.amount_set.all %}
               {{ e.food.name }}{% if e.food.description|length > 1 %}
-              [{{ e.food.description }}]{% endif %}{% if not forloop.last %}, {% endif %}
+              ({{ e.food.description }}){% endif %}{% if not forloop.last %}, {% endif %}
             {% endfor %}
           </div>
           </div>
-          {% if request.session.language_code == "sv" %}
+          {% if language == "sv" %}
 
             <div class="product_sv">{{ product.nameSV }}
             <div class="ingredients">
@@ -47,8 +47,8 @@ Sista förbrukningsdag
 
 
         </pre>
-        {% else %}
-
+        {% endif %}
+        {% if language == "fi" %}
 
                     <table class="nutrition_facts">
                     <tr><th>Ravintosisältö </th><td colspan="2"> 100g sisältää</td></tr>

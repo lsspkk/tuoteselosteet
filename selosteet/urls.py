@@ -19,6 +19,9 @@ urlpatterns = [
     url(r'^(?P<food_id>[0-9]+)/food/$', views.food, name='food'),
     # ex: /polls/5/product/
     url(r'^(?P<product_id>[0-9]+)/tuote/$', views.tuote, name='tuote'),
+    url(r'^tuote/(?P<product_id>[0-9]+)/(?P<language_code>[\w]+)/$', views.tuote2, name='tuote2'),
+    url(r'^setlanguage/(?P<language_code>[\w]+)/$', views.setlanguage, name='setlanguage'),
+
         # ex: /polls/
     url(r'^$', views.products, name='products'),
 

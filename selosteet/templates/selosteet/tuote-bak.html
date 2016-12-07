@@ -1,0 +1,60 @@
+{% extends 'selosteet/base-fullwidth.html' %}
+
+{% block content %}
+
+  {% if product %}
+    {% for i in "12345678" %}
+          <div class="product_data">
+          <div class="product">{{ product.name }}
+            <div class="weight"> n.{{product.weight}}g</div>
+          <div class="ingredients">
+            {% for e in product.amount_set.all %}
+              {{ e.food.name }}{% if e.food.description|length > 1 %}
+              ({{ e.food.description }}){% endif %}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+          </div>
+          </div>
+          <div class="product_sv">{{ product.nameSV }}
+          <div class="ingredients">
+            {% for e in product.amount_set.all %}
+              {{ e.food.nameSV }}{% if e.food.descriptionSV|length > 1 %}
+              ({{ e.food.descriptionSV }}){% endif %}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+          </div>
+          </div>
+          <table class="nutrition_facts">
+          <tr><th>Ravintosisältö / Näringsinnehåll</th><td colspan="2"> 100g sisältää</td></tr>
+          <tr><td>energia<span class="sv"> / energi</span></td><td>{{ product.get_nutrition_facts.energia1|floatformat:"0" }}</td><td> kj</td></tr>
+          <tr class="same"><td></td><td>{{ product.get_nutrition_facts.energia2|floatformat:"0" }}</td><td> kcal</td></tr>
+          <tr><td>rasva<span class="sv"> / fet</span></td><td>{{ product.get_nutrition_facts.rasva|floatformat:"1" }}</td><td> g</td></tr>
+          <tr class="same"><td><small>josta tyydyttynyttä</small><span class="sv"> / varav mättad</span></td><td>{{ product.get_nutrition_facts.tyydyttynyt|floatformat:"1" }}</td><td> g</td></tr>
+          <tr><td>hiilihydraatti<span class="sv"> / kolhydrater</span></td><td>{{ product.get_nutrition_facts.hiilihydraatti|floatformat:"1" }}</td><td> g</td></tr>
+          <tr  class="same"><td><small>josta sokeria</small><span class="sv"> / varav socker</span></td><td>{{ product.get_nutrition_facts.sokeri|floatformat:"1" }}</td><td> g</td></tr>
+          <tr><td>ravintokuitu<span class="sv"> / fiber</span></td><td>{{ product.get_nutrition_facts.ravintokuitu|floatformat:"1" }}</td><td> g</td></tr>
+          <tr><td>proteiini<span class="sv"> / protein</span></td><td>{{ product.get_nutrition_facts.proteiini|floatformat:"1" }}</td><td> g</td></tr>
+          <tr><td>suola<span class="sv"> / salt</span></td><td>{{ product.get_nutrition_facts.suola|floatformat:"1" }}</td><td> g</td></tr>
+        </table>
+
+          <div class="extra_product_data">
+          <pre class="extra_data">LAKTOOSITON / LAKTOSFRI
+
+Viimeinen käyttöpäivä /
+Sista förbrukningsdag
+
+
+
+
+</pre>
+          <span class="company_name">  {{ product.company.name }} </span>
+           <pre class="company_description">{{ product.company.description }}</pre>
+         </div>
+
+          </div>
+
+      {% endfor %}
+      {% else %}
+        <p>Tuotteita ei ole.</p>
+  {% endif %}
+
+
+{% endblock %}

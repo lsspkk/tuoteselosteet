@@ -7,29 +7,105 @@
     {% load static %}
 
     <link rel="stylesheet" type="text/css" href="{% static 'selosteet/style.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'selosteet/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'selosteet/mainlayout.css' %}" />
+
+    <script src="{% static 'selosteet/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'selosteet/js/bootstrap.js' %}" ></script>
+
+
+    <script src="{% static 'selosteet/own_scripts.js' %}"></script>
+
+
     </head>
 
     <body>
-      <div id="wrap">
-      <div id="menu">
-          <ul>
-          {% if user.is_authenticated %}
-              <li><a href="/selosteet/admin/logout/?next=/selosteet/">Poistu</a></li>
-          {% endif %}
 
-              <li><a href="/selosteet/">Tuotteet</a></li>
-              <li><a href="/selosteet/admin/">Hallinta</a></li>
 
-          </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container-fluid main-container">
+
+
+              <div class="row header">
+                      <div class="col-md-8">
+                          <h1 class="muted">Tuoteselosteet</h1>
+                      </div>
+
+                      <div class="col-md-4" style="margin-top:15px;">
+
+                        <div id="language" class="btn-group" role="group" aria-label="...">
+                          <button type="button" class="btn btn-default fi" >Suomi</button>
+                          <button type="button" class="btn btn-default sv" >Suomi ja Ruotsi</button>
+
+
+                        </div>
+                        <p>
+                          <script type="text/javascript">
+                              $('#language .{{ request.session.language_code }}').addClass('active');
+                          </script>
+                        </p>
+
+                      </div>
+              </div>
+
+
+        		<div class="col-md-2 sidebar">
+        			<div class="row">
+      	<!-- uncomment code for absolute positioning tweek see top comment in css -->
+      	<div class="absolute-wrapper"> </div>
+      	<!-- Menu -->
+      	<div class="side-menu">
+      		<nav class="navbar navbar-default" role="navigation">
+      			<!-- Main Menu -->
+      			<div class="side-menu-container">
+      				<ul class="nav navbar-nav">
+      					<li><a href="/selosteet/admin/">
+                  <span class="glyphicon glyphicon-dashboard"></span>
+                  Hallinta</a></li>
+      					<li><a href="/selosteet/">
+                  <span class="glyphicon glyphicon-cloud"></span>
+                  Tuotteet</a></li>
+
+      					<!-- Dropdown-->
+                  {% if user.is_authenticated %}
+                      <li><a href="/selosteet/admin/logout/?next=/selosteet/">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Poistu</a></li>
+                  {% endif %}
+
+
+                </ul>
+              			</div><!-- /.navbar-collapse -->
+              		</nav>
+
+              	</div>
+              </div>
+            </div>
+                  <div class="col-md-10 content">
+                      <div class="panel panel-default">
+                      	<div class="panel-heading">
+
+                      	</div>
+
+
+
+                        <div class="content-wrap">
+                          {% block content %}{% endblock %}
+                        </div>
       </div>
-
-
-
-        <div id="content">
-            {% block content %}{% endblock %}
-        </div>
-
-      </div>
-
+  </div>
+    </div>
     </body>
 </html>

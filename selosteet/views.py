@@ -41,6 +41,14 @@ def tuote(request, product_id):
     f = get_object_or_404(Product, pk=product_id)
     return render(request, 'selosteet/tuote.html', {'product': f})
 
+@login_required
+def tuote2(request, product_id, language_code):
+    f = get_object_or_404(Product, pk=product_id)
+    return render(request, 'selosteet/tuote2.html', {'product': f, 'language' : language_code})
+
+def setlanguage(request, language_code):
+    request.session["language_code"] = language_code
+    return HttpResponse("<p>hyv kieli</p>");
 
 def import_foods(request):
     # Full path and name to your csv file
