@@ -114,7 +114,7 @@ class Amount(models.Model):
     class Meta:
         verbose_name = _('amount')
         verbose_name_plural = _('amounts')
-        ordering = ('-weight',)
+        ordering = ('weight',)
 
 # Allergian aiheuttajat
 class Allergen(models.Model):

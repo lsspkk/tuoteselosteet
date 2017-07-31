@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-24 13:52+0000\n"
+"POT-Creation-Date: 2016-12-07 18:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr "Nimi"
 msgid "description"
 msgstr "Kuvaus ja lisätiedot"
 
-#: selosteet/models.py:25 selosteet/models.py:61
+#: selosteet/models.py:25 selosteet/models.py:63
 msgid "company"
 msgstr "Yritys"
 
@@ -42,94 +42,114 @@ msgstr "Yritys"
 msgid "companies"
 msgstr "Yritykset"
 
-#: selosteet/models.py:29
+#: selosteet/models.py:30
 msgid "Food|name"
 msgstr "Nimi"
 
-#: selosteet/models.py:30
+#: selosteet/models.py:31
 msgid "Food|nameSV"
 msgstr "Nimi (ruotsi)"
 
-#: selosteet/models.py:31
+#: selosteet/models.py:32
 msgid "food|description"
 msgstr "lähderaaka-aineet"
 
-#: selosteet/models.py:32
+#: selosteet/models.py:33
 msgid "food|descriptionSV"
 msgstr "lähderaaka-aineet (ruotsi)"
 
-#: selosteet/models.py:33
+#: selosteet/models.py:34
 msgid "link"
 msgstr "Linkki nettiin ravintoarvoihin"
 
-#: selosteet/models.py:34
+#: selosteet/models.py:35
 msgid "extra"
 msgstr "Lisätieto: valmistaja tms."
 
-#: selosteet/models.py:35
+#: selosteet/models.py:36
 msgid "energy"
 msgstr "Energia"
 
-#: selosteet/models.py:36
+#: selosteet/models.py:37
 msgid "fat"
 msgstr "Rasva"
 
-#: selosteet/models.py:37
+#: selosteet/models.py:38
 msgid "saturatedFat"
 msgstr "Tyydyttynyt rasva"
 
-#: selosteet/models.py:38
+#: selosteet/models.py:39
 msgid "carbohydrate"
 msgstr "Hiilihydraatti"
 
-#: selosteet/models.py:39
+#: selosteet/models.py:40
 msgid "sugar"
 msgstr "Sokeri"
 
-#: selosteet/models.py:40
+#: selosteet/models.py:41
 msgid "fiber"
 msgstr "Ravintokuitu"
 
-#: selosteet/models.py:41
+#: selosteet/models.py:42
 msgid "protein"
 msgstr "Proteiini"
 
-#: selosteet/models.py:42
+#: selosteet/models.py:43
 msgid "salt"
 msgstr "Suola"
 
-#: selosteet/models.py:54 selosteet/models.py:105
+#: selosteet/models.py:55 selosteet/models.py:107
 msgid "food"
 msgstr "Raaka-aine"
 
-#: selosteet/models.py:55
+#: selosteet/models.py:56
 msgid "foods"
 msgstr "Raaka-aineet"
 
-#: selosteet/models.py:58
+#: selosteet/models.py:60
 msgid "Product|name"
 msgstr "Tuotteen nimi"
 
-#: selosteet/models.py:59
+#: selosteet/models.py:61
 msgid "Product|nameSV"
 msgstr "Tuotteen nimi (ruotsi)"
 
-#: selosteet/models.py:62 selosteet/models.py:107
+#: selosteet/models.py:64 selosteet/models.py:109
 msgid "weight"
 msgstr "paino"
 
-#: selosteet/models.py:65
+#: selosteet/models.py:67
 msgid "product"
 msgstr "Tuote"
 
-#: selosteet/models.py:66
+#: selosteet/models.py:68
 msgid "products"
 msgstr "Tuotteet"
 
-#: selosteet/models.py:113
+#: selosteet/models.py:115
 msgid "amount"
 msgstr "Määrä;"
 
-#: selosteet/models.py:114
+#: selosteet/models.py:116
 msgid "amounts"
 msgstr "Määrät"
+
+#: selosteet/models.py:120
+msgid "Allergen|name"
+msgstr "Allergian aiheuttajan nimi"
+
+#: selosteet/models.py:121
+msgid "Allergen|nameSV"
+msgstr "Allergian aiheuttajan nimi ruotsiksi"
+
+#: selosteet/models.py:123
+#, fuzzy
+#| msgid "Allergen|name"
+msgid "allergen"
+msgstr "Allergiaa aiheuttava aine"
+
+#: selosteet/models.py:124
+#, fuzzy
+#| msgid "Allergen|name"
+msgid "allergens"
+msgstr "Allergiaa aiheuttavat aineet"

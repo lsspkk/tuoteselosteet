@@ -8,7 +8,7 @@
           <div class="product">{{ product.name }}
             <div class="weight"> n.{{product.weight}}g</div>
           <div class="ingredients">
-            AINEKSET: {% for e in product.amount_set.all %}
+            AINEKSET: {% for e in ingredients %}
               {{ e.food.name|make_bold|safe }}{% if e.food.description|length > 1 %}
               [{{ e.food.description|make_bold|safe }}]{% endif %}{% if not forloop.last %}, {% endif %}
             {% endfor %}

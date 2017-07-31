@@ -63,6 +63,7 @@ body {
 .product_data {
   padding: 1%;
 }
+/*
 .product_data:nth-child(4n) {
   background: #efe;
 }
@@ -70,6 +71,9 @@ body {
 .product_data:nth-child(4n +1 ) {
   background: #eef;
 }
+
+*/
+
 .sv {
   font-size: 85%;
 }

@@ -56,11 +56,11 @@ body {
   padding: 1%;
 }
 .product_data:nth-child(4n) {
-  #background: #efe;
+  background: #efe;
 }
 
 .product_data:nth-child(4n +1 ) {
-  #background: #eef;
+  background: #eef;
 }
 .sv {
   font-size: 85%;

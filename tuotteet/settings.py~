@@ -130,6 +130,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "selosteet/static/")
 LOGIN_REDIRECT_URL = '/selosteet/accounts/login/'
 LOGIN_URL = '/selosteet/admin/login/'
 
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = true
+SESSION_COOKIE_SECURE = true
+CSRF_COOKIE_SECURE = true

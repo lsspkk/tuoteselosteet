@@ -8,7 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 
 # Register your models here.
 
-from .models import Food, Product, Amount, Company
+from .models import *
 
 from django import forms
 
@@ -106,6 +106,21 @@ class CompanyAdmin(GuardedModelAdmin):
         return Company.objects.filter(user=request.user)
 
 admin.site.register(Company, CompanyAdmin)
+
+
+class AllergenAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (None, {
+            'fields': ('name', 'nameSV'),
+            'description': "Raaka-aineet, jotka ovat allergian aiheuttajia, korostetaan tuoteselosteissa."
+        }),
+        )
+    list_display = ( 'id', 'name', 'nameSV' )
+    list_editable = ( 'name', 'nameSV' )
+    list_display_links = None
+
+admin.site.register(Allergen, AllergenAdmin)
+
 
 class FoodAdmin(admin.ModelAdmin):
     list_display = ( 'id', 'name', 'nameSV', 'description', 'descriptionSV' )
