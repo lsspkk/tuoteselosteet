@@ -20,7 +20,7 @@ padding-right: 15px;
 }
 
 .fullwidth #content {
-  width: 100%;
+  width: 19.5cm;
   margin: 0;
 }
 body {
@@ -37,6 +37,7 @@ body {
   width: 48%;
   display: block;
   float: left;
+  font-size: 10px;
 }
 .product {
   margin-bottom: 0em;
@@ -63,6 +64,10 @@ body {
 .product_data {
   padding: 1%;
 }
+.company_description {
+  font-size: 9px;
+}
+
 /*
 .product_data:nth-child(4n) {
   background: #efe;
@@ -82,7 +87,7 @@ body {
 .nutrition_facts {
   display: block;
   float: left;
-  font-size: 70%;
+  font-size: 65%;
   max-width: 65%;
   width: 65%;
 }
@@ -92,10 +97,15 @@ body {
 .nutrition_facts th:nth-child(1) {
   padding-right:20px;
 }
+.nutrition_facts td, nutrition_facts tr {
+  line-height:0.91em;
+  padding: 0px;
+  margin: 0px;
+} 
 .nutrition_facts .same td {
   vertical-align: top;
   position: relative;
-  top: -4px;
+  top: -1px;
 }
 
 .extra_product_data {
