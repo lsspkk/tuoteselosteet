@@ -44,7 +44,6 @@ body {
 }
 .product a {
   line-height: 2em;
-  font-size: 1.3em;
   text-decoration: none;
 }
 
@@ -87,9 +86,9 @@ body {
 .nutrition_facts {
   display: block;
   float: left;
-  font-size: 65%;
-  max-width: 65%;
-  width: 65%;
+  font-size: 70%;
+  max-width: 59%;
+  width: 59%;
 }
 .nutrition_facts td:nth-child(2) {
   text-align: right;
@@ -111,7 +110,7 @@ body {
 .extra_product_data {
   display: block;
   float: left;
-  width: 35%;
+  width: 40%;
   font-size: 70%;
   text-align: right;
 }
@@ -122,3 +121,41 @@ body {
   font-family: arial, sans-serif;
   margin: 0px;
 }
+
+.recipe {
+ padding: 41px 120px;
+ }
+ .recipe .weight {
+   float: none;
+     margin-bottom: 40px;
+     }
+     .recipe table {
+       font-size: 130%;
+       }
+       
+       .recipe table:nth-of-type(1)  td:nth-of-type(1) {
+
+clear: both;
+text-align: right;
+padding-right: 20px;
+line-wrap: none;
+white-space: nowrap;
+vertical-align: top;
+	     }
+
+.recipe .nutrition_facts {
+       margin: 40px 0;
+         font-size: 85%;
+ }
+.recipe .nutrition_facts td {
+  padding: 4px 0;
+}
+.recipe table p.description {
+font-size: 70%;
+text-align: left;
+padding: 0px;
+margin: 3px 0 5px;
+  }
+  
+.table  .product td { border: none; }
+  .product { font-size: 1.3em; }
