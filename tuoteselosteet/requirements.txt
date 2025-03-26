@@ -10,3 +10,4 @@ pyOpenSSL==25.0.0
 sqlparse==0.5.3
 typing_extensions>3.6.2
 Werkzeug==3.0.6
+gunicorn

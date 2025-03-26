@@ -1,0 +1,8 @@
+services:
+  apache:
+    build: .
+    container_name: django_apache
+    ports:
+      - '443:443'
+    volumes:
+      - ./tuoteselosteet:/tuoteselosteet

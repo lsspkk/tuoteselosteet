@@ -8,10 +8,13 @@ from pathlib import Path
 # === Paths ===
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+
+print(f"BASE_DIR: {BASE_DIR}")
+
 # === Security ===
 SECRET_KEY = 'a&fhwmypj*-^010nvne69)&e^t_a9_hwkr==cu%o53=09xcyj6'
 DEBUG = True
-ALLOWED_HOSTS = ['0.0.0.0', 'www.xn--hyty-6qa.net', 'xn--hyty-6qa.net']
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', 'www.xn--hyty-6qa.net', 'xn--hyty-6qa.net']
 
 # === Applications ===
 INSTALLED_APPS = [
@@ -42,6 +45,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'tuotteet.urls'
 

@@ -9,3 +9,5 @@ sftp.conf.txt
 deploy*
 
 *.sqlite3
+
+.env*
