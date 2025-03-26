@@ -5,11 +5,14 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /tuoteselosteet
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
     apache2 \
     apache2-dev \
     openssl \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+    && pip install --no-cache-dir mod_wsgi \
+    && mod_wsgi-express module-config > /etc/apache2/mods-available/wsgi.load \
+    && a2enmod wsgi ssl
 
 COPY tuoteselosteet/server.crt /etc/ssl/certs/server.crt
 COPY tuoteselosteet/server.key /etc/ssl/private/server.key
@@ -17,10 +20,6 @@ COPY tuoteselosteet/server.key /etc/ssl/private/server.key
 COPY tuoteselosteet/requirements.txt /tuoteselosteet/requirements.txt
 
 RUN pip install --no-cache-dir -r /tuoteselosteet/requirements.txt
-RUN pip install mod_wsgi    
-RUN mod_wsgi-express module-config > /etc/apache2/mods-available/wsgi.load
-RUN a2enmod wsgi ssl
-
 
 COPY tuoteselosteet/ /tuoteselosteet
 COPY apache/000-default.conf /etc/apache2/sites-available/000-default.conf
