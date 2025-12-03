@@ -1,0 +1,39 @@
+/* Custom admin styles to fix overly wide buttons */
+
+/* Make delete/save buttons more compact */
+a.deletelink,
+a.addlink,
+a.changelink,
+a.viewlink,
+.submit-row a.deletelink {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: fit-content !important;
+    padding: 10px 15px !important;
+}
+
+/* Fix submit row buttons */
+.submit-row input,
+.submit-row a,
+.submit-row button {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 100px !important;
+}
+
+/* Make object tools more compact */
+.object-tools li {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+.object-tools a {
+    display: inline-block !important;
+    width: auto !important;
+}
+
+/* Specifically target the delete link in forms */
+.deletelink-box a {
+    display: inline-block !important;
+    width: auto !important;
+}
