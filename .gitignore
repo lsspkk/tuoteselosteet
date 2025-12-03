@@ -11,3 +11,11 @@ deploy*
 *.sqlite3
 
 .env*
+
+# Static files (collected by collectstatic)
+tuoteselosteet/selosteet/static/admin/
+tuoteselosteet/selosteet/static/django_extensions/
+tuoteselosteet/selosteet/static/guardian/
+
+# Keep only custom static files
+!tuoteselosteet/selosteet/static/selosteet/
