@@ -760,6 +760,7 @@ table#change-history tbody th {
     width: 100%;
     min-width: 980px;
     padding: 0;
+    overflow:scroll;
 }
 
 #content {
@@ -814,9 +815,11 @@ table#change-history tbody th {
 /* HEADER */
 
 #header {
-    width: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
     height: 40px;
-    padding: 10px 40px;
+    padding: 10px 5%;
     background: #417690;
     line-height: 40px;
     color: #ffc;
@@ -860,7 +863,6 @@ table#change-history tbody th {
 }
 
 #user-tools {
-    float: right;
     padding: 0;
     margin: 0 0 0 20px;
     font-weight: 300;
