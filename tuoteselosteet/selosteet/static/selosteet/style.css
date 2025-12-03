@@ -1,15 +1,15 @@
-.container-fluid{
+.container-fluid {
   width: 80%;
 }
 .content-wrap {
- padding: 20px 50px;
+  padding: 20px 50px;
 }
 #language {
   float: right;
-padding-right: 15px;
+  padding-right: 15px;
 }
 .header {
-    margin: 40px 0px 40px -20px;
+  margin: 40px 0px 40px -20px;
 }
 .muted {
   color: #f5f5f5;
@@ -29,8 +29,8 @@ body {
 }
 
 .weight {
-  display:inline-block;
-  float:right;
+  display: inline-block;
+  float: right;
 }
 
 .product_data {
@@ -82,7 +82,6 @@ body {
   font-size: 85%;
 }
 
-
 .nutrition_facts {
   display: block;
   float: left;
@@ -94,13 +93,14 @@ body {
   text-align: right;
 }
 .nutrition_facts th:nth-child(1) {
-  padding-right:20px;
+  padding-right: 20px;
 }
-.nutrition_facts td, nutrition_facts tr {
-  line-height:0.91em;
+.nutrition_facts td,
+nutrition_facts tr {
+  line-height: 0.91em;
   padding: 0px;
   margin: 0px;
-} 
+}
 .nutrition_facts .same td {
   vertical-align: top;
   position: relative;
@@ -123,39 +123,63 @@ body {
 }
 
 .recipe {
- padding: 41px 120px;
- }
- .recipe .weight {
-   float: none;
-     margin-bottom: 40px;
-     }
-     .recipe table {
-       font-size: 130%;
-       }
-       
-       .recipe table:nth-of-type(1)  td:nth-of-type(1) {
+  padding: 41px 120px;
+}
+.recipe .weight {
+  float: none;
+  margin-bottom: 40px;
+}
+.recipe table {
+  font-size: 130%;
+}
 
-clear: both;
-text-align: right;
-padding-right: 20px;
-line-wrap: none;
-white-space: nowrap;
-vertical-align: top;
-	     }
+.recipe table:nth-of-type(1) td:nth-of-type(1) {
+  clear: both;
+  text-align: right;
+  padding-right: 20px;
+  line-wrap: none;
+  white-space: nowrap;
+  vertical-align: top;
+}
 
 .recipe .nutrition_facts {
-       margin: 40px 0;
-         font-size: 85%;
- }
+  margin: 40px 0;
+  font-size: 85%;
+}
 .recipe .nutrition_facts td {
   padding: 4px 0;
 }
 .recipe table p.description {
-font-size: 70%;
-text-align: left;
-padding: 0px;
-margin: 3px 0 5px;
-  }
-  
-.table  .product td { border: none; }
-  .product { font-size: 1.3em; }
+  font-size: 70%;
+  text-align: left;
+  padding: 0px;
+  margin: 3px 0 5px;
+}
+
+.table .product td {
+  border: none;
+}
+.product {
+  font-size: 1.3em;
+}
+
+/* === FAVORITES STYLING === */
+.favorite-star {
+  color: #ccc;
+  font-size: 1.2em;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.favorite-star:hover {
+  color: #f0ad4e;
+  transform: scale(1.1);
+}
+
+.favorite-star.active {
+  color: #f0ad4e;
+}
+
+/* Favorites menu item active state - only the star is yellow */
+#sort-favorites.active .glyphicon {
+  color: #f0ad4e;
+}
